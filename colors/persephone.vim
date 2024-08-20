@@ -1,7 +1,7 @@
 " persephone.vim - Vim color scheme for 16-color terminals
 " --------------------------------------------------------------
 " Author:   Pim Peters
-" Version:  1.0.0
+" Version:  2.0.0
 " --------------------------------------------------------------
 
 set background=dark
@@ -67,9 +67,10 @@ hi! link SpecialKey    NonText
 hi Delimiter       ctermfg=7
 hi Comment         ctermfg=8
 hi Underlined      ctermfg=4   cterm=underline
-hi Type            ctermfg=4
+hi Type            ctermfg=7
+hi @variable       ctermfg=11
 hi String          ctermfg=14
-hi Keyword         ctermfg=2
+hi Keyword         ctermfg=10
 hi Todo            ctermfg=15  ctermbg=NONE     cterm=bold,underline
 hi Function        ctermfg=4
 hi Identifier      ctermfg=7   cterm=NONE
@@ -82,69 +83,3 @@ hi Ignore          ctermfg=0
 hi! link Operator  Delimiter
 hi! link PreProc   Delimiter
 hi! link Error     ErrorMsg
-
-hi htmlTagName              ctermfg=2
-hi htmlTag                  ctermfg=2
-hi htmlArg                  ctermfg=10
-hi htmlH1                   cterm=bold
-hi htmlBold                 cterm=bold
-hi htmlItalic               cterm=underline
-hi htmlUnderline            cterm=underline
-hi htmlBoldItalic           cterm=bold,underline
-hi htmlBoldUnderline        cterm=bold,underline
-hi htmlUnderlineItalic      cterm=underline
-hi htmlBoldUnderlineItalic  cterm=bold,underline
-hi! link htmlLink           Underlined
-hi! link htmlEndTag         htmlTag
-
-hi xmlTagName       ctermfg=4
-hi xmlTag           ctermfg=12
-hi! link xmlString  xmlTagName
-hi! link xmlAttrib  xmlTag
-hi! link xmlEndTag  xmlTag
-hi! link xmlEqual   xmlTag
-
-hi! link javaScript        Normal
-hi! link javaScriptBraces  Delimiter
-
-hi phpSpecialFunction    ctermfg=5
-hi phpIdentifier         ctermfg=11
-hi phpDocParam           ctermfg=15
-hi phpDocIdentifier      ctermfg=3
-hi! link phpVarSelector  phpIdentifier
-hi! link phpHereDoc      String
-hi! link phpDefine       Statement
-hi! link phpDocTags      Type
-
-hi! link markdownHeadingRule        NonText
-hi! link markdownHeadingDelimiter   markdownHeadingRule
-hi! link markdownLinkDelimiter      Delimiter
-hi! link markdownURLDelimiter       Delimiter
-hi! link markdownCodeDelimiter      NonText
-hi! link markdownLinkTextDelimiter  markdownLinkDelimiter
-hi! link markdownUrl                markdownLinkText
-hi! link markdownAutomaticLink      markdownLinkText
-hi! link markdownCodeBlock          String
-hi markdownCode                     cterm=bold
-hi markdownBold                     cterm=bold
-hi markdownItalic                   cterm=underline
-
-hi gitCommitBranch               ctermfg=3
-hi gitCommitSelectedType         ctermfg=10
-hi gitCommitSelectedFile         ctermfg=2
-hi gitCommitUnmergedType         ctermfg=9
-hi gitCommitUnmergedFile         ctermfg=1
-hi! link gitCommitFile           Directory
-hi! link gitCommitUntrackedFile  gitCommitUnmergedFile
-hi! link gitCommitDiscardedType  gitCommitUnmergedType
-hi! link gitCommitDiscardedFile  gitCommitUnmergedFile
-
-hi! link helpExample         String
-hi! link helpHeadline        Title
-hi! link helpSectionDelim    Comment
-hi! link helpHyperTextEntry  Statement
-hi! link helpHyperTextJump   Underlined
-hi! link helpURL             Underlined
-
-hi netrwExe       ctermfg=9
-hi netrwClassify  ctermfg=8  cterm=bold
