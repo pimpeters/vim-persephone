@@ -1,7 +1,7 @@
 " persephone.vim - Vim color scheme for 16-color terminals
 " --------------------------------------------------------------
 " Author:   Pim Peters
-" Version:  2.0.0
+" Version:  2.0.1
 " --------------------------------------------------------------
 
 set background=dark
@@ -21,6 +21,7 @@ hi PmenuThumb          ctermbg=7
 hi PmenuSBar           ctermbg=8
 hi PmenuSel            ctermfg=0     ctermbg=4
 hi ColorColumn         ctermbg=0
+hi WinSeparator        ctermfg=0
 hi SpellBad            ctermfg=1     ctermbg=NONE  cterm=underline
 hi SpellCap            ctermfg=10    ctermbg=NONE  cterm=underline
 hi SpellRare           ctermfg=11    ctermbg=NONE  cterm=underline
